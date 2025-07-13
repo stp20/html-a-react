@@ -1,9 +1,9 @@
 
 // Imágenes de diferentes perfiles del auto
 const images = [
-    'img/Honda.webp',
-    'img/honda2.jpg',
-    'img/honda3.jpg'
+    'accets/img/Honda.webp',
+    'accets/img/honda2.jpg',
+    'accets/img/honda3.jpg'
 
 ];
 let current = 0;

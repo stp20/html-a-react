@@ -26,16 +26,13 @@ return (
                     <nav>
                         <ul className="list-inline mb-0">
                             <li className="list-inline-item">
-                                <a href="index.html" className="text-white text-decoration-underline">Inicio</a>
+                                <a href="Home" className="text-white text-decoration-underline">Inicio</a>
                             </li>
                             <li className="list-inline-item">
-                                <a href="catalogo.html" className="text-white text-decoration-underline">Catálogo</a>
+                                <a href="Catalog" className="text-white text-decoration-underline">Catálogo</a>
                             </li>
                             <li className="list-inline-item">
-                                <a href="ofertas.html" className="text-white text-decoration-underline">Ofertas</a>
-                            </li>
-                            <li className="list-inline-item">
-                                <a href="#contacto" className="text-white text-decoration-underline">Contacto</a>
+                                <a href="Ofert" className="text-white text-decoration-underline">Ofertas</a>
                             </li>
                         </ul>
                     </nav>

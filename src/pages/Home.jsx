@@ -8,7 +8,7 @@ const featuredCars = [
         desc: 'Eficiencia, tecnología y confort en un solo vehículo.',
         badge: { text: 'Nuevo', className: 'bg-success' },
         price: '$22.000.000 CLP',
-        link: 'toyota.html',
+        link: 'Toyota',
     },
     {
         img: '/accets/img/mustang gt.webp',
@@ -17,7 +17,7 @@ const featuredCars = [
         desc: 'Clásico e icónico para los amantes de la velocidad.',
         badge: { text: 'Oferta', className: 'bg-danger' },
         price: '$35.000.000 CLP',
-        link: 'mustanggt.html',
+        link: 'Mustang',
     },
     {
         img: '/accets/img/Honda.webp',
@@ -26,7 +26,7 @@ const featuredCars = [
         desc: 'Espacio, seguridad y tecnología para toda la familia.',
         badge: { text: 'Seminuevo', className: 'bg-warning text-dark' },
         price: '$28.500.000 CLP',
-        link: 'honda.html',
+        link: 'Honda',
     },
 ];
 
@@ -129,9 +129,6 @@ function Home() {
                                     <p className="card-text">{car.desc}</p>
                                     <span className={`badge mb-2 ${car.badge.className}`}>{car.badge.text}</span>
                                     <p className="fw-bold">{car.price}</p>
-                                    <a href={car.link} className="btn btn-outline-primary w-100">
-                                        Ver detalles
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -227,7 +224,7 @@ function Home() {
                         </ul>
                         <div className="mt-4">
                             <a
-                                href="equipo.html"
+                                href="Equipo"
                                 className="btn btn-primary btn-lg px-4 py-2 shadow animate__animated animate__pulse animate__infinite"
                                 style={{ fontSize: '1.1rem' }}
                             >

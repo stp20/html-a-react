@@ -5,9 +5,8 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div className="container">
-                <a className="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-                    <i className="bi bi-car-front-fill me-2 fs-3"></i>
-                    AutoStore
+                <a className="navbar-brand fw-bold d-flex align-items-center" href="/">
+                    <i className="bi bi-car-front-fill me-2 fs-3"></i>AutoStore
                 </a>
                 <button
                     className="navbar-toggler"
@@ -23,49 +22,42 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mx-auto">
                         <li className="nav-item">
-                            <a className="nav-link active" href="index.html">
-                                <i className="bi bi-house-door me-1"></i>
-                                Inicio
+                            <a className="nav-link active" href="/">
+                                <i className="bi bi-house-door me-1"></i>Inicio
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="catalogo.html">
-                                <i className="bi bi-grid me-1"></i>
-                                Catálogo
+                            <a className="nav-link" href="Catalog">
+                                <i className="bi bi-grid me-1"></i>Catálogo
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="ofertas.html">
-                                <i className="bi bi-tag me-1"></i>
-                                Ofertas
+                            <a className="nav-link" href="Ofert">
+                                <i className="bi bi-tag me-1"></i>Ofertas
                             </a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#contacto">
-                                <i className="bi bi-envelope me-1"></i>
-                                Contacto
+                                <i className="bi bi-envelope me-1"></i>Contacto
                             </a>
                         </li>
                     </ul>
-                    <form
-                        className="d-flex align-items-center"
-                        role="search"
-                        id="navbarSearchForm"
-                        autoComplete="off"
-                        style={{ maxWidth: '200px' }}
-                    >
-                        <input
-                            className="form-control form-control-sm me-2"
-                            type="search"
-                            placeholder="Buscar..."
-                            aria-label="Buscar"
-                            id="navbarSearchInput"
-                            style={{ width: '100px' }}
-                        />
-                        <button className="btn btn-outline-light btn-sm" type="submit">
-                            <i className="bi bi-search"></i>
-                        </button>
-                    </form>
+                    <div className="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
+                        <a
+                            href="Carrito"
+                            className="btn btn-outline-light btn-sm position-relative"
+                            aria-label="Carrito de compras"
+                        >
+                            <i className="bi bi-cart3 fs-5"></i>
+                            <span
+                                className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                style={{ fontSize: "0.75em" }}
+                                id="cart-count"
+                            >
+                                0
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -99,7 +91,7 @@ function Home() {
                                 <span className="fw-bold text-warning">personalizada</span>.
                             </p>
                             <a
-                                href="catalogo.html"
+                                href="Catalog"
                                 className="btn btn-warning btn-lg px-5 py-3 shadow animate__animated animate__pulse animate__infinite"
                                 style={{ fontSize: '1.25rem' }}
                             >
