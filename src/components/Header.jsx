@@ -1,0 +1,116 @@
+import React from 'react';
+
+// Navbar como componente funcional usando JSX
+function Navbar() {
+    return (
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div className="container">
+                <a className="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                    <i className="bi bi-car-front-fill me-2 fs-3"></i>
+                    AutoStore
+                </a>
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav mx-auto">
+                        <li className="nav-item">
+                            <a className="nav-link active" href="index.html">
+                                <i className="bi bi-house-door me-1"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="catalogo.html">
+                                <i className="bi bi-grid me-1"></i>
+                                Catálogo
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="ofertas.html">
+                                <i className="bi bi-tag me-1"></i>
+                                Ofertas
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#contacto">
+                                <i className="bi bi-envelope me-1"></i>
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                    <form
+                        className="d-flex align-items-center"
+                        role="search"
+                        id="navbarSearchForm"
+                        autoComplete="off"
+                        style={{ maxWidth: '200px' }}
+                    >
+                        <input
+                            className="form-control form-control-sm me-2"
+                            type="search"
+                            placeholder="Buscar..."
+                            aria-label="Buscar"
+                            id="navbarSearchInput"
+                            style={{ width: '100px' }}
+                        />
+                        <button className="btn btn-outline-light btn-sm" type="submit">
+                            <i className="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    );
+}
+
+// Home como componente funcional
+function Home() {
+    return (
+        <div>
+            <Navbar />
+            <section
+                className="hero-section position-relative overflow-hidden py-5"
+                style={{ backgroundImage: 'url(/accets/img/conseci2.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+            >
+                <div className="container position-relative z-2">
+                    <div className="row align-items-center justify-content-center">
+                        <div className="col-lg-8 mx-auto text-center text-white">
+                            <h1
+                                className="display-3 fw-bold mb-3 animate__animated animate__fadeInDown"
+                                style={{ textShadow: '0 4px 24px rgba(0,0,0,0.25)' }}
+                            >
+                                Encuentra el auto de tus <span className="text-warning">sueños</span>
+                            </h1>
+                            <p
+                                className="lead mb-4 animate__animated animate__fadeInUp"
+                                style={{ fontSize: '1.4rem' }}
+                            >
+                                Las mejores <span className="fw-bold text-warning">marcas</span>, precios{' '}
+                                <span className="fw-bold text-warning">increíbles</span> y atención{' '}
+                                <span className="fw-bold text-warning">personalizada</span>.
+                            </p>
+                            <a
+                                href="catalogo.html"
+                                className="btn btn-warning btn-lg px-5 py-3 shadow animate__animated animate__pulse animate__infinite"
+                                style={{ fontSize: '1.25rem' }}
+                            >
+                                <i className="bi bi-search me-2"></i>Ver Catálogo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
+}
+
+export default Home;
