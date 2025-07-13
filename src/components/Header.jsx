@@ -71,24 +71,28 @@ function Home() {
             <Navbar />
             <section
                 className="hero-section position-relative overflow-hidden py-5"
-                style={{ backgroundImage: 'url(/accets/img/conseci2.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                style={{
+                    backgroundImage: 'url(/accets/img/conseci2.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' 
+                }}
             >
+                <div className="overlay position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(47, 46, 46, 0.5)' }}></div>
                 <div className="container position-relative z-2">
                     <div className="row align-items-center justify-content-center">
                         <div className="col-lg-8 mx-auto text-center text-white">
                             <h1
                                 className="display-3 fw-bold mb-3 animate__animated animate__fadeInDown"
-                                style={{ textShadow: '0 4px 24px rgba(0,0,0,0.25)' }}
+                                style={{ textShadow: '0 4px 24px rgba(255, 255, 255, 0.56)' }}
                             >
                                 Encuentra el auto de tus <span className="text-warning">sueños</span>
                             </h1>
                             <p
                                 className="lead mb-4 animate__animated animate__fadeInUp"
-                                style={{ fontSize: '1.4rem' }}
+                                style={{ fontSize: '1.4rem', textShadow: '0 4px 24px rgba(255, 255, 255, 0.56)'}}
                             >
                                 Las mejores <span className="fw-bold text-warning">marcas</span>, precios{' '}
                                 <span className="fw-bold text-warning">increíbles</span> y atención{' '}
                                 <span className="fw-bold text-warning">personalizada</span>.
+                                
                             </p>
                             <a
                                 href="Catalog"

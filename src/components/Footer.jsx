@@ -26,7 +26,7 @@ return (
                     <nav>
                         <ul className="list-inline mb-0">
                             <li className="list-inline-item">
-                                <a href="Home" className="text-white text-decoration-underline">Inicio</a>
+                                <a href="/" className="text-white text-decoration-underline">Inicio</a>
                             </li>
                             <li className="list-inline-item">
                                 <a href="Catalog" className="text-white text-decoration-underline">Catálogo</a>
